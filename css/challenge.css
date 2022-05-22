@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Rubik&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box; }
+*::before, ::after{margin: 0; padding: 0; box-sizing: border-box;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none;}
+
+html,body{position:relative; width: 100%; height: 100%; overflow:hidden; font-family: 'Rubik', sans-serif; color:#333;}
+body img{width: 100%; height:100%; display: block;}
+
+#box{
+    position: absolute; top:50px; left:50px;
+    width: 270px; height: 270px; border-radius:50%; background-color: rgba(255, 255, 255, 0.356);
+    text-align: center; font-size: 1.2rem;
+}
+#box .title{
+    margin-top: 65px;
+    font-size: 1.8rem;
+}
+.weather{
+    margin:15px 0;
+}
+
+.weather span{
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: center;
+}
+.weather span:first-child{
+    display: block;
+    font-size: 1.0rem;
+    line-height: 50px;
+    color:#666;
+    text-align: center;
+}
+.weather span:nth-child(2){
+    padding-right: 20px;
+}
+
+.waving_hands{
+    position: absolute; bottom:43%; left:22%;
+    width:300px; height:300px;
+}
+.waving_hands:hover {
+    animation-name: wave-animation;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    }
+    
+    @keyframes wave-animation {
+    0% {
+    transform: rotate( 0.0deg)
+    }
+    10% {
+    transform: rotate(14.0deg)
+    }
+    20% {
+    transform: rotate(-8.0deg)
+    }
+    30% {
+    transform: rotate(14.0deg)
+    }
+    40% {
+    transform: rotate(-4.0deg)
+    }
+    50% {
+    transform: rotate(10.0deg)
+    }
+    60% {
+    transform: rotate( 0.0deg)
+    }
+    100% {
+    transform: rotate( 0.0deg)
+    }
+    }
+
+#clock{
+    position:absolute; top:30%; left:34%;
+    font-size: 7rem;
+    color:rgb(139, 137, 137);
+}
+
+#login-form{
+    position: absolute; top:50%; left:50%;  transform: translate(-50%, -50%);
+}
+#login-form input[type=text]{
+    width:550px; height: 50px; font-size: 2.0rem; border:0; border-radius:20px; outline:none; background-color:rgba(240, 248, 255, 0.699); text-align: center;
+}
+
+#greeting{
+    position: absolute; bottom:45%; left: 50%; transform: translateX(-50%);
+    font-size: 3.5rem;
+}
+
+.hidden{
+    display: none;
+}
+
+#todo_box{
+    position:absolute; top:100px; right:0;
+    width:450px; text-align: center;
+}
+#todo_box .todo_title{
+    margin-bottom: 35px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+#todo_box img{
+    position:absolute; top:90px; left:-30px;
+    width:80px; height:80px;
+}
+
+#todo_form input[type=text]{
+    width:300px; margin-bottom:10px; font-size: 1.4rem; border:0; border-bottom:2px solid rgba(139, 137, 137, 0.212); outline:none; background:none; text-align: center;
+}
+#todo_form input:hover{transform: scale(1.1); transition: 0.3s;}
+#todo_list{
+    width:100%; height: 950px; background-color: rgba(255, 255, 255, 0.356);
+    font-size: 30px; font-weight: bold; line-height: 60px;
+}
+
+#quote{
+    position: absolute; top:70%; left:50%; transform: translateX(-50%);
+}
+#quote span{
+    display: block;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color:rgb(107, 107, 107);
+}
+#quote span:first-child{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+#quote span:last-child{
+    font-size: 1rem;
+    color:rgb(185, 184, 184)
+}
